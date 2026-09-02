@@ -28,6 +28,12 @@ const chatSchema = z.object({
   length: lengthSchema,
 });
 
+export type EmailInput = z.input<typeof emailSchema>;
+export type NotesInput = z.input<typeof notesSchema>;
+export type PlanInput = z.input<typeof planSchema>;
+export type ResearchInput = z.input<typeof researchSchema>;
+export type ChatInput = z.input<typeof chatSchema>;
+
 const BASE =
   "You are WorkMate AI, a professional workplace productivity assistant for business users. Write in clear, business-appropriate English.";
 

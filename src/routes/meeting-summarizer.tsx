@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { RotateCcw, Wand2 } from "lucide-react";
-import { summarizeMeeting } from "@/lib/ai.functions";
+import { summarizeMeeting, type NotesInput } from "@/lib/ai.functions";
 import { useAiAction } from "@/hooks/useAiAction";
 import { useAppStore } from "@/lib/store";
 import { Button } from "@/components/ui/button";
@@ -50,9 +50,7 @@ function MeetingSummarizerPage() {
   const { settings, bump } = useAppStore();
   const [notes, setNotes] = useState("");
   const call = useServerFn(summarizeMeeting);
-  const action = useAiAction((data: Parameters<typeof summarizeMeeting>[0]["data"]) =>
-    call({ data }),
-  );
+  const action = useAiAction((data: NotesInput) => call({ data }));
 
   const submit = async () => {
     const res = await action.run({ notes, length: settings.responseLength });

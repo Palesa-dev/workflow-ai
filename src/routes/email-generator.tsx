@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { Send, RotateCcw } from "lucide-react";
-import { generateEmail } from "@/lib/ai.functions";
+import { generateEmail, type EmailInput } from "@/lib/ai.functions";
 import { useAiAction } from "@/hooks/useAiAction";
 import { useAppStore } from "@/lib/store";
 import { Button } from "@/components/ui/button";
@@ -59,9 +59,7 @@ function EmailGeneratorPage() {
   const [recipient, setRecipient] = useState("");
   const [tone, setTone] = useState<EmailTone>(settings.defaultTone);
   const call = useServerFn(generateEmail);
-  const action = useAiAction((data: Parameters<typeof generateEmail>[0]["data"]) =>
-    call({ data }),
-  );
+  const action = useAiAction((data: EmailInput) => call({ data }));
 
   const submit = async () => {
     const res = await action.run({

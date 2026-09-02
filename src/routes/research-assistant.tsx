@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { RotateCcw, Search } from "lucide-react";
-import { researchTopic } from "@/lib/ai.functions";
+import { researchTopic, type ResearchInput } from "@/lib/ai.functions";
 import { useAiAction } from "@/hooks/useAiAction";
 import { useAppStore } from "@/lib/store";
 import { Button } from "@/components/ui/button";
@@ -47,9 +47,7 @@ function ResearchPage() {
   const { settings } = useAppStore();
   const [topic, setTopic] = useState("");
   const call = useServerFn(researchTopic);
-  const action = useAiAction((data: Parameters<typeof researchTopic>[0]["data"]) =>
-    call({ data }),
-  );
+  const action = useAiAction((data: ResearchInput) => call({ data }));
 
   const submit = () => void action.run({ topic, length: settings.responseLength });
   const clear = () => {
