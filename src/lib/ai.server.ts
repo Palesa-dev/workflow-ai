@@ -26,7 +26,7 @@ const lengthHint: Record<AiLength, string> = {
  */
 export async function runAi(
   messages: ChatTurn[],
-  opts: { length?: AiLength; mockFallback: () => string },
+  opts: { length?: AiLength | undefined; mockFallback: () => string },
 ): Promise<{ text: string; demo: boolean }> {
   const key = process.env["LOVABLE_API_KEY"];
   if (!key) return { text: opts.mockFallback(), demo: true };
