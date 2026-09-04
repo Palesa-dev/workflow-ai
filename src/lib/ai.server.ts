@@ -36,7 +36,7 @@ export async function runAi(
   const payload: ChatTurn[] = [
     {
       role: "system",
-      content: `${system?.content ?? "You are WorkMate AI, a professional workplace assistant."}\n\n${
+      content: `${system?.content ?? "You are FlowMate AI, a professional workplace assistant."}\n\n${
         lengthHint[opts.length ?? "medium"]
       }\nFormat your answer in clean markdown using the requested section headings. Never invent confidential data.`,
     },

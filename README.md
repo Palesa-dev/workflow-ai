@@ -804,7 +804,7 @@ Do not create placeholder pages that simply say "Coming Soon."
 
 Every feature listed above should have a usable interface and a working demo flow.
 
-The final result should feel like a cohesive product called WorkMate AI — an AI-powered workplace productivity assistant.
+The final result should feel like a cohesive product called FlowMate AI — an AI-powered workplace productivity assistant.
 
 This project was built with [Lovable](https://lovable.dev).
 

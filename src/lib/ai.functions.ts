@@ -35,7 +35,7 @@ export type ResearchInput = z.input<typeof researchSchema>;
 export type ChatInput = z.input<typeof chatSchema>;
 
 const BASE =
-  "You are WorkMate AI, a professional workplace productivity assistant for business users. Write in clear, business-appropriate English.";
+  "You are FlowMate AI, a professional workplace productivity assistant for business users. Write in clear, business-appropriate English.";
 
 function toError(e: unknown): never {
   const message = e instanceof Error ? e.message : "The AI request failed. Please try again.";

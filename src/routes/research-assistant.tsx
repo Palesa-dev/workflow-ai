@@ -25,13 +25,13 @@ import {
 export const Route = createFileRoute("/research-assistant")({
   head: () => ({
     meta: [
-      { title: "AI Research Assistant — WorkMate AI" },
+      { title: "AI Research Assistant — FlowMate AI" },
       {
         name: "description",
         content:
           "Get structured workplace research with an overview, key findings, insights, recommendations and next steps.",
       },
-      { property: "og:title", content: "AI Research Assistant — WorkMate AI" },
+      { property: "og:title", content: "AI Research Assistant — FlowMate AI" },
       {
         property: "og:description",
         content: "Structured research briefings for business questions and topics.",

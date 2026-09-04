@@ -17,13 +17,13 @@ import { useAppStore } from "@/lib/store";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dashboard — WorkMate AI Workplace Assistant" },
+      { title: "Dashboard — FlowMate AI Workplace Assistant" },
       {
         name: "description",
         content:
-          "Your AI-powered workplace productivity dashboard: generate emails, summarize meetings, plan tasks, research topics and chat with WorkMate AI.",
+          "Your AI-powered workplace productivity dashboard: generate emails, summarize meetings, plan tasks, research topics and chat with FlowMate AI.",
       },
-      { property: "og:title", content: "Dashboard — WorkMate AI Workplace Assistant" },
+      { property: "og:title", content: "Dashboard — FlowMate AI Workplace Assistant" },
       {
         property: "og:description",
         content: "AI tools for emails, meeting notes, task planning, research and workplace chat.",
@@ -103,7 +103,7 @@ function Dashboard() {
       <section className="surface-card relative flex flex-col gap-4 overflow-hidden border-l-4 border-l-primary p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="inline-flex items-center gap-1.5 rounded-full bg-primary-soft px-2.5 py-1 text-[11px] font-medium text-primary">
-            <Sparkles className="size-3" /> WorkMate AI
+            <Sparkles className="size-3" /> FlowMate AI
           </p>
           <h1 className="mt-3 text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
             {greeting()}, {settings.name.split(" ")[0]}

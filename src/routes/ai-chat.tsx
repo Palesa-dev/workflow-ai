@@ -14,13 +14,13 @@ import type { ChatMessage } from "@/types";
 export const Route = createFileRoute("/ai-chat")({
   head: () => ({
     meta: [
-      { title: "AI Workplace Chat — WorkMate AI" },
+      { title: "AI Workplace Chat — FlowMate AI" },
       {
         name: "description",
         content:
-          "Chat with WorkMate AI about emails, meetings, priorities, productivity and business concepts.",
+          "Chat with FlowMate AI about emails, meetings, priorities, productivity and business concepts.",
       },
-      { property: "og:title", content: "AI Workplace Chat — WorkMate AI" },
+      { property: "og:title", content: "AI Workplace Chat — FlowMate AI" },
       {
         property: "og:description",
         content: "A conversational AI assistant for everyday workplace questions.",
@@ -95,7 +95,7 @@ function ChatPage() {
       <div className="flex flex-wrap items-start justify-between gap-3">
         <PageHeading
           title="AI Workplace Chat"
-          description="Ask anything about your work — WorkMate AI keeps the conversation in context."
+                description="Ask anything about your work — FlowMate AI keeps the conversation in context."
         />
         <Button
           variant="outline"
@@ -117,14 +117,14 @@ function ChatPage() {
             <div className="flex h-full flex-col items-center justify-center gap-3 text-center">
               <img
                 src={logo}
-                alt="WorkMate AI"
+                alt="FlowMate AI"
                 width={48}
                 height={48}
                 loading="lazy"
                 className="size-12"
               />
               <p className="text-sm font-medium text-foreground">
-                Start a conversation with WorkMate AI
+                Start a conversation with FlowMate AI
               </p>
               <p className="max-w-sm text-xs text-muted-foreground">
                 Try one of the suggested prompts below or ask your own workplace question.
@@ -210,7 +210,7 @@ function ChatPage() {
                   void send(input);
                 }
               }}
-              placeholder="Ask WorkMate AI about emails, meetings, priorities..."
+              placeholder="Ask FlowMate AI about emails, meetings, priorities..."
               rows={2}
               className="min-h-[52px] resize-none"
             />

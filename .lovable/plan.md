@@ -1,11 +1,11 @@
-# Account-based WorkMate persistence
+# Account-based FlowMate persistence
 
 ## Goal
 Add secure sign-in/sign-up and sign-out, then store each user’s profile and generated emails, meeting summaries, and task plans in Lovable Cloud rather than browser storage.
 
 ## User experience
 - Add a polished public `/auth` screen with email/password sign-in, account creation, and Google sign-in.
-- Protect the WorkMate workspace so signed-out visitors are sent to `/auth` and signed-in users land on `/dashboard`.
+- Protect the FlowMate workspace so signed-out visitors are sent to `/auth` and signed-in users land on `/dashboard`.
 - Show the authenticated user’s identity in the sidebar/header and provide a clear sign-out action.
 - Preserve the current responsive workspace design and all existing AI tools.
 - Show saved work on the relevant Email, Meeting, and Task Planner pages, with the newest item restored and prior items available to reopen or delete.

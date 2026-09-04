@@ -34,13 +34,13 @@ import type { PlannedTask, Priority, TaskStatus } from "@/types";
 export const Route = createFileRoute("/task-planner")({
   head: () => ({
     meta: [
-      { title: "AI Task Planner — WorkMate AI" },
+      { title: "AI Task Planner — FlowMate AI" },
       {
         name: "description",
         content:
           "Turn a list of tasks into an organized daily schedule with priorities, time blocks, deadlines and status tracking.",
       },
-      { property: "og:title", content: "AI Task Planner — WorkMate AI" },
+      { property: "og:title", content: "AI Task Planner — FlowMate AI" },
       {
         property: "og:description",
         content: "AI-built daily schedules with priorities, durations and progress tracking.",
@@ -129,7 +129,7 @@ function TaskPlannerPage() {
     <div className="space-y-6">
       <PageHeading
         title="AI Task Planner"
-        description="List what you need to get done and WorkMate AI will build a realistic schedule."
+        description="List what you need to get done and FlowMate AI will build a realistic schedule."
       />
 
       <WorkspaceLayout

@@ -19,13 +19,13 @@ import type { EmailTone, Priority, ResponseLength } from "@/types";
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — WorkMate AI" },
+      { title: "Settings — FlowMate AI" },
       {
         name: "description",
         content:
-          "Manage your WorkMate AI profile, default email tone, task priority, theme, AI response length and privacy guidance.",
+          "Manage your FlowMate AI profile, default email tone, task priority, theme, AI response length and privacy guidance.",
       },
-      { property: "og:title", content: "Settings — WorkMate AI" },
+      { property: "og:title", content: "Settings — FlowMate AI" },
       {
         property: "og:description",
         content: "Profile, preferences, AI settings and responsible AI guidance.",
@@ -48,7 +48,7 @@ function SettingsPage() {
     <div className="space-y-6">
       <PageHeading
         title="Settings"
-        description="Personalise WorkMate AI and review how to use it responsibly."
+        description="Personalise FlowMate AI and review how to use it responsibly."
       />
 
       <div className="grid gap-6 lg:grid-cols-2 lg:items-start">

@@ -34,13 +34,13 @@ import type { EmailTone } from "@/types";
 export const Route = createFileRoute("/email-generator")({
   head: () => ({
     meta: [
-      { title: "Smart Email Generator — WorkMate AI" },
+      { title: "Smart Email Generator — FlowMate AI" },
       {
         name: "description",
         content:
           "Generate complete professional emails with subject, greeting, body and sign-off in your chosen tone.",
       },
-      { property: "og:title", content: "Smart Email Generator — WorkMate AI" },
+      { property: "og:title", content: "Smart Email Generator — FlowMate AI" },
       {
         property: "og:description",
         content: "AI-written business emails with a tone that fits the moment.",
@@ -81,7 +81,7 @@ function EmailGeneratorPage() {
     <div className="space-y-6">
       <PageHeading
         title="Smart Email Generator"
-        description="Describe what you need to say and WorkMate AI will write a complete, professional email."
+        description="Describe what you need to say and FlowMate AI will write a complete, professional email."
       />
 
       <WorkspaceLayout

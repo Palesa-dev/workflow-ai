@@ -25,13 +25,13 @@ import {
 export const Route = createFileRoute("/meeting-summarizer")({
   head: () => ({
     meta: [
-      { title: "Meeting Notes Summarizer — WorkMate AI" },
+      { title: "Meeting Notes Summarizer — FlowMate AI" },
       {
         name: "description",
         content:
           "Turn long meeting notes into a concise summary with key decisions, action items, owners and deadlines.",
       },
-      { property: "og:title", content: "Meeting Notes Summarizer — WorkMate AI" },
+      { property: "og:title", content: "Meeting Notes Summarizer — FlowMate AI" },
       {
         property: "og:description",
         content: "Summaries, decisions, action items and deadlines from raw meeting notes.",

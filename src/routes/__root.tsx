@@ -80,11 +80,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "WorkMate AI — AI Workplace Assistant" },
+      { title: "FlowMate AI — AI Workplace Assistant" },
       {
         name: "description",
         content:
-          "WorkMate AI is an AI-powered workplace productivity assistant for emails, meeting notes, planning, research and chat.",
+          "FlowMate AI is an AI-powered workplace productivity assistant for emails, meeting notes, planning, research and chat.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

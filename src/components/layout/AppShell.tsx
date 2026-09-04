@@ -14,13 +14,13 @@ function Brand() {
     <Link to="/" className="flex items-center gap-2.5">
       <img
         src={logo}
-        alt="WorkMate AI logo"
+        alt="FlowMate AI logo"
         width={32}
         height={32}
         className="size-8 rounded-lg"
       />
       <span className="text-base font-semibold tracking-tight text-sidebar-foreground">
-        WorkMate <span className="text-primary">AI</span>
+        FlowMate <span className="text-primary">AI</span>
       </span>
     </Link>
   );
@@ -144,7 +144,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6 sm:px-6 sm:py-8">{children}</main>
 
         <footer className="border-t border-border px-4 py-4 text-center text-[11px] leading-relaxed text-muted-foreground sm:px-6">
-          WorkMate AI · AI-generated content may contain errors. Verify outputs before using them
+          FlowMate AI · AI-generated content may contain errors. Verify outputs before using them
           for important business decisions and avoid entering confidential information.
         </footer>
       </div>
