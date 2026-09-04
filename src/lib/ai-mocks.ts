@@ -15,7 +15,7 @@ Having reviewed the current status, I wanted to share a clear summary of where t
 I would be glad to discuss this further at a time that suits you.
 
 Kind regards,
-Alex Morgan
+Palesa Ramkgopa
 (${tone} tone — demo response)`;
 }
 

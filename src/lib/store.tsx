@@ -25,7 +25,7 @@ type StoreValue = {
 };
 
 const DEFAULT_SETTINGS: Settings = {
-  name: "Alex Morgan",
+  name: "Palesa Ramkgopa",
   email: "alex.morgan@company.com",
   defaultTone: "professional",
   defaultPriority: "medium",
