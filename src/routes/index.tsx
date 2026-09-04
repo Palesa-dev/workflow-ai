@@ -39,30 +39,40 @@ const features = [
     icon: Mail,
     name: "Smart Email Generator",
     description: "Draft polished, on-tone business emails in seconds.",
+    color: "bg-sky-soft text-sky",
+    accent: "border-t-sky",
   },
   {
     to: "/meeting-summarizer" as const,
     icon: NotebookPen,
     name: "Meeting Notes Summarizer",
     description: "Turn raw notes into decisions, action items and deadlines.",
+    color: "bg-teal-soft text-teal",
+    accent: "border-t-teal",
   },
   {
     to: "/task-planner" as const,
     icon: CalendarClock,
     name: "AI Task Planner",
     description: "Build a realistic daily schedule around your priorities.",
+    color: "bg-amber-soft text-amber",
+    accent: "border-t-amber",
   },
   {
     to: "/research-assistant" as const,
     icon: Search,
     name: "AI Research Assistant",
     description: "Structured briefings on any workplace topic or question.",
+    color: "bg-coral-soft text-coral",
+    accent: "border-t-coral",
   },
   {
     to: "/ai-chat" as const,
     icon: Bot,
     name: "AI Workplace Chat",
     description: "Ask anything about your work and keep the conversation going.",
+    color: "bg-primary-soft text-primary",
+    accent: "border-t-primary",
   },
 ];
 
@@ -77,20 +87,20 @@ function Dashboard() {
   const { stats, tasksCompleted, tasksRemaining, settings } = useAppStore();
 
   const overview = [
-    { label: "Tasks completed", value: tasksCompleted, icon: CheckCircle2, tint: "text-success" },
-    { label: "Tasks remaining", value: tasksRemaining, icon: ListTodo, tint: "text-primary" },
-    { label: "Emails generated", value: stats.emailsGenerated, icon: Mail, tint: "text-primary" },
+    { label: "Tasks completed", value: tasksCompleted, icon: CheckCircle2, tint: "bg-success-soft text-success" },
+    { label: "Tasks remaining", value: tasksRemaining, icon: ListTodo, tint: "bg-amber-soft text-amber" },
+    { label: "Emails generated", value: stats.emailsGenerated, icon: Mail, tint: "bg-sky-soft text-sky" },
     {
       label: "Meetings summarized",
       value: stats.meetingsSummarized,
       icon: NotebookPen,
-      tint: "text-primary",
+      tint: "bg-teal-soft text-teal",
     },
   ];
 
   return (
     <div className="space-y-8">
-      <section className="surface-card flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
+      <section className="surface-card relative flex flex-col gap-4 overflow-hidden border-l-4 border-l-primary p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="inline-flex items-center gap-1.5 rounded-full bg-primary-soft px-2.5 py-1 text-[11px] font-medium text-primary">
             <Sparkles className="size-3" /> WorkMate AI
@@ -133,7 +143,9 @@ function Dashboard() {
             <div key={stat.label} className="surface-card p-4">
               <div className="flex items-center justify-between">
                 <p className="text-xs text-muted-foreground">{stat.label}</p>
-                <stat.icon className={`size-4 ${stat.tint}`} />
+                <span className={`flex size-8 items-center justify-center rounded-lg ${stat.tint}`}>
+                  <stat.icon className="size-4" />
+                </span>
               </div>
               <p className="mt-2 text-2xl font-semibold text-foreground">{stat.value}</p>
             </div>
@@ -149,9 +161,9 @@ function Dashboard() {
           {features.map((feature) => (
             <div
               key={feature.to}
-              className="surface-card flex flex-col p-5 transition-shadow hover:shadow-lift"
+              className={`surface-card flex flex-col border-t-2 p-5 transition-all hover:-translate-y-0.5 hover:shadow-lift ${feature.accent}`}
             >
-              <div className="flex size-10 items-center justify-center rounded-lg bg-primary-soft text-primary">
+              <div className={`flex size-10 items-center justify-center rounded-lg ${feature.color}`}>
                 <feature.icon className="size-5" />
               </div>
               <h3 className="mt-4 text-base font-semibold text-foreground">{feature.name}</h3>
