@@ -71,7 +71,7 @@ function SidebarFooter({ onNavigate }: { onNavigate?: () => void }) {
       >
         <Avatar className="size-8">
           <AvatarFallback className="bg-primary-soft text-xs font-semibold text-primary">
-            {initials || "AM"}
+            {initials || "PR"}
           </AvatarFallback>
         </Avatar>
         <div className="min-w-0">
@@ -134,7 +134,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <Link to="/settings">
               <Avatar className="size-8">
                 <AvatarFallback className="bg-primary text-xs font-semibold text-primary-foreground">
-                  AM
+                  PR
                 </AvatarFallback>
               </Avatar>
             </Link>

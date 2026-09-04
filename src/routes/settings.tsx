@@ -57,7 +57,7 @@ function SettingsPage() {
             <div className="flex items-center gap-4">
               <Avatar className="size-14">
                 <AvatarFallback className="bg-primary-soft text-base font-semibold text-primary">
-                  {initials || "AM"}
+                  {initials || "PR"}
                 </AvatarFallback>
               </Avatar>
               <p className="text-xs text-muted-foreground">
